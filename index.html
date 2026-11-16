@@ -1,40 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pong Game</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pong has moved</title>
+<script>
+// Pong moved from /pong-game/ to /ari/arcade/pong.html. Keep the rest of the address (page, ?query, #hash).
+(function () {
+  var oldBase = "/pong-game/", newBase = "/ari/arcade/pong.html", keepPath = false;
+  var p = location.pathname, rest = "";
+  if (keepPath && p.indexOf(oldBase) === 0) rest = p.slice(oldBase.length).replace(/^index\.html$/, "");
+  location.replace(newBase + rest + location.search + location.hash);
+})();
+</script>
+<meta http-equiv="refresh" content="0; url=https://orzelig.github.io/ari/arcade/pong.html">
+<link rel="canonical" href="https://orzelig.github.io/ari/arcade/pong.html">
+<style>body{font-family:system-ui,sans-serif;text-align:center;padding:60px 16px;color:#2b2240;background:#fff8ec}a{color:#7c5cff}</style>
 </head>
 <body>
-    <div class="game-container">
-        <canvas id="gameCanvas" width="800" height="600"></canvas>
-        <div class="controls">
-            <div class="control-group">
-                <h3>Player 1</h3>
-                <p><span class="key">W</span> Move Up</p>
-                <p><span class="key">S</span> Move Down</p>
-            </div>
-            <div class="control-group">
-                <h3>Game</h3>
-                <p><span class="key">1</span> Single Player</p>
-                <p><span class="key">2</span> Two Players</p>
-                <p><span class="key">Space</span> Start/Pause</p>
-                <p><span class="key">R</span> Reset</p>
-            </div>
-            <div class="control-group">
-                <h3>Player 2</h3>
-                <p><span class="key">↑</span> Move Up</p>
-                <p><span class="key">↓</span> Move Down</p>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/paddle.js"></script>
-    <script src="js/ball.js"></script>
-    <script src="js/input.js"></script>
-    <script src="js/renderer.js"></script>
-    <script src="js/ai.js"></script>
-    <script src="js/game.js"></script>
+<p>Pong has moved to <a href="https://orzelig.github.io/ari/arcade/pong.html">https://orzelig.github.io/ari/arcade/pong.html</a>.</p>
 </body>
 </html>
